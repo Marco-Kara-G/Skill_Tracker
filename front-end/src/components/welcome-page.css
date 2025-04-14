@@ -1,0 +1,108 @@
+:root {
+  /* Background Colors */
+  --bg-main-default: #f8f4e3;
+  --bg-main-alt: #e0dccf;
+
+  /* secondary Colors */
+  --color-secondary-default: #0b2545;
+  --color-secondary-light: #1a3b66;
+  --color-secondary-dark: #081a33;
+
+  /* primary Colors */
+  --color-primary-default: #0a81d1;
+  --color-primary-light: #3ca9e2;
+  --color-primary-dark: #0768a8;
+
+  /* Accent Colors */
+  --color-accent-warm: #f5a623;
+  --color-accent-error: #d64545;
+  --color-accent-success: #6fcf97;
+
+  /* Neutral Colors */
+  --color-neutral-white: #ffffff;
+  --color-neutral-light: #f8f4e3;
+  --color-neutral-medium: #e0dccf;
+  --color-neutral-dark: #333333;
+  --color-neutral-muted: #666666;
+}
+
+.welcome-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  height: 100vh;
+  background-color: var(--bg-main-default);
+  position: relative;
+}
+
+.welcome-page h1 {
+  font-size: 2.5rem;
+  color: var(--color-neutral-dark);
+}
+.welcome-page p {
+  font-size: 1.2rem;
+  color: var(--color-neutral-muted);
+}
+
+.welcome-page .welcome-page__buttons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.welcome-page .welcome-page__buttons button {
+  width: 80%;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primary-button {
+  background-color: var(--color-primary-default);
+  color: var(--color-neutral-white);
+  border: 1px solid var(--color-primary-default);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.secondary-button {
+  background-color: var(--color-secondary-default);
+  color: var(--color-neutral-white);
+  border: 1px solid var(--color-secondary-default);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.primary-button:hover {
+  background-color: var(--color-primary-light);
+  border: 1px solid var(--color-primary-light);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.secondary-button:hover {
+  background-color: var(--color-secondary-light);
+  border: 1px solid var(--color-secondary-light);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.welcome-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.welcome-footer p {
+  font-size: smaller;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: var(--color-neutral-muted);
+}
