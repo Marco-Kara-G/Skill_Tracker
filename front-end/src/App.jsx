@@ -1,4 +1,5 @@
 import "./App.css";
+import { UserAccesPage } from "./components/login-registration-page";
 import { WelcomePage } from "./components/welcome-page";
 import { BrowserRouter, Route, Routes } from "react-router";
 
@@ -8,6 +9,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<WelcomePage />} />
+          <Route path="/acces" element={<UserAccesPage />} />
         </Routes>
       </BrowserRouter>
     </>

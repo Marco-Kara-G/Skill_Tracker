@@ -26,6 +26,12 @@
   --color-neutral-muted: #666666;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .welcome-page {
   display: flex;
   flex-direction: column;
@@ -34,6 +40,7 @@
   height: 100vh;
   background-color: var(--bg-main-default);
   position: relative;
+  padding: 2rem;
 }
 
 .welcome-page h1 {

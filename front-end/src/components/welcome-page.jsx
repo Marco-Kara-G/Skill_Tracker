@@ -21,15 +21,15 @@ export function WelcomePage() {
 
   return (
     <div className="welcome-page">
-      <h1>Welcome to the App</h1>
-      <p>This is a simple welcome page.</p>
+      <h1>Welcome! </h1>
       <div className="welcome-logo">
         <img
-          src="\src\assets\IMG_20230205_033014_752.PNG"
+          src="\src\assets\Logo_centered_noBG.webp"
           alt="Welcome"
-          width={300}
+          width={350}
         />
       </div>
+      <p>Please Log-in or register a new account.</p>
       <div className="welcome-page__buttons">
         <button onClick={handleLoginState} className="button primary-button">
           Log In
@@ -39,7 +39,7 @@ export function WelcomePage() {
         </button>
       </div>
       <div className="welcome-footer">
-        <p>&copy; 2025 ******</p>
+        <p>&copy; 2025 PulseSkill</p>
         <p>All rights reserved.</p>
       </div>
     </div>
