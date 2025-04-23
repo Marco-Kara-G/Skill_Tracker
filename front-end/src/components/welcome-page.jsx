@@ -1,22 +1,27 @@
 import "./welcome-page.css";
 import React, { useState } from "react";
+import { useNavigate } from "react-router";
 
 export function WelcomePage() {
-  const [loginState, setLoginState] = useState(false);
-  const [signupState, setSignupState] = useState(false);
+  const navigate = useNavigate();
+  // this variables must be put in a context
+  // const [loginState, setLoginState] = useState(false);
+  // const [signupState, setSignupState] = useState(false);
 
   const handleLoginState = () => {
-    setLoginState(!loginState);
-    if (signupState) {
-      setSignupState(false);
-    }
+    // setLoginState(!loginState);
+    // if (signupState) {
+    //   setSignupState(false);
+    // }
+    navigate("/access");
   };
 
   const handleSignupState = () => {
-    setSignupState(!signupState);
-    if (loginState) {
-      setLoginState(false);
-    }
+    // setSignupState(!signupState);
+    // if (loginState) {
+    //   setLoginState(false);
+    // }
+    navigate("/access");
   };
 
   return (

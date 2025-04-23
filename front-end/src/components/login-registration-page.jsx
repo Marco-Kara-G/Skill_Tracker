@@ -40,7 +40,7 @@ export function UserAccesPage() {
                 <span>
                   <button
                     onClick={handleUserAcces}
-                    className="login-regisdtration-page__fakeBTN"
+                    className="login-registration-page__fakeBTN"
                   >
                     Here
                   </button>
@@ -79,7 +79,7 @@ export function UserAccesPage() {
                 <span>
                   <button
                     onClick={handleUserAcces}
-                    className="login-regisdtration-page__fakeBTN"
+                    className="login-registration-page__fakeBTN"
                   >
                     Here
                   </button>
