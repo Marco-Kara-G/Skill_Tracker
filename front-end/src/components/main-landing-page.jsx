@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./main-landing-page.css";
+import separatorImg from "../assets/BG_Separator_Main-Page_V2.webp";
 
 export function MainPage() {
   // switch between different day time
@@ -19,7 +20,7 @@ export function MainPage() {
   return (
     <>
       <div className="main-page__container">
-        <section className="main-page__Hero">
+        <section className="main-page__hero">
           <div className="hero__text">
             <h2>{dayTime}</h2>
             <h4>*********</h4>
@@ -36,17 +37,57 @@ export function MainPage() {
               >
                 <path
                   d="M12 24H36M36 24L28 16M36 24L28 32"
-                  stroke="#0D2F6E"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 />
               </svg>
             </button>
           </div>
         </section>
+        <div
+          className="main-page__separator"
+          style={{
+            backgroundImage: `url(${separatorImg})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            width: "100%",
+            height: "250px",
+            opacity: "1",
+            bottom: "100px",
+            position: "relative",
+            borderRadius: "1rem",
+            zIndex: "0",
+          }}
+        ></div>
+        <section className="main-page_navigation">
+          <div className="navigation__container">
+            <div className="navigation__item">
+              <div className="item__text">
+                <h4>My Profile</h4>
+                <p>View and edit your profile</p>
+              </div>
+              <div className="item__icon"></div>
+            </div>
+            <div className="navigation__item">
+              <div className="item__text">
+                <h4>My Profile</h4>
+                <p>View and edit your profile</p>
+              </div>
+              <div className="item__icon"></div>
+            </div>
+            <div className="navigation__item">
+              <div className="item__text">
+                <h4>My Profile</h4>
+                <p>View and edit your profile</p>
+              </div>
+              <div className="item__icon"></div>
+            </div>
+          </div>
+        </section>
       </div>
-      ;
     </>
   );
 }
