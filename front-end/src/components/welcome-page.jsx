@@ -1,4 +1,3 @@
-import "./welcome-page.css";
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
 

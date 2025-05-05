@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./login-registration-page.css";
 
 export function UserAccesPage() {
   const [loginState, setLoginState] = useState(true);

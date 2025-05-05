@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import "./main-landing-page.css";
 import separatorImg from "../assets/BG_Separator_Main-Page_V2.webp";
 
 export function MainPage() {
@@ -56,34 +55,82 @@ export function MainPage() {
             width: "100%",
             height: "250px",
             opacity: "1",
-            bottom: "100px",
+            bottom: "4rem",
             position: "relative",
             borderRadius: "1rem",
             zIndex: "0",
           }}
         ></div>
-        <section className="main-page_navigation">
+        <section className="main-page__navigation">
           <div className="navigation__container">
             <div className="navigation__item">
               <div className="item__text">
-                <h4>My Profile</h4>
-                <p>View and edit your profile</p>
+                <h4>My skills</h4>
+                <p>View and check all your skills</p>
               </div>
-              <div className="item__icon"></div>
+              <div className="item__icon">
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 24H36M36 24L28 16M36 24L28 32"
+                    stroke="#ffffff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
             </div>
             <div className="navigation__item">
               <div className="item__text">
-                <h4>My Profile</h4>
-                <p>View and edit your profile</p>
+                <h4>New Jurney</h4>
+                <p>Start a new skill learning journey</p>
               </div>
-              <div className="item__icon"></div>
+              <div className="item__icon">
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 24H36M36 24L28 16M36 24L28 32"
+                    stroke="#ffffff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
             </div>
             <div className="navigation__item">
               <div className="item__text">
-                <h4>My Profile</h4>
-                <p>View and edit your profile</p>
+                <h4>Discorver Skills</h4>
+                <p>See whats other is working on</p>
               </div>
-              <div className="item__icon"></div>
+              <div className="item__icon">
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 24H36M36 24L28 16M36 24L28 32"
+                    stroke="#ffffff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </section>
